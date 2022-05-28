@@ -2,248 +2,214 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: TeleportAreaVisible
-  m_Shader: {fileID: 4800000, guid: 787d7485aa6482341a9f55fa37fb84f1, type: 3}
-  m_ShaderKeywords: RECEIVE_SHADOWS S_SPECULAR_NONE S_UNLIT _ALPHAPREMULTIPLY_ON _EMISSION
+  m_Shader: {fileID: 4800000, guid: c4edd00ff2db5b24391a4fcb1762e459, type: 3}
+  m_ValidKeywords:
+  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords: []
   m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
     OriginalShader: Standard
     RenderType: Transparent
+  disabledShaderPasses:
+  - DistortionVectors
+  - MOTIONVECTORS
   m_SavedProperties:
-    serializedVersion: 2
+    serializedVersion: 3
     m_TexEnvs:
-    - first:
-        name: _BumpMap
-      second:
+    - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailAlbedoMap
-      second:
+    - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailMask
-      second:
+    - _DetailMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailNormalMap
-      second:
+    - _DetailNormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _EmissionMap
-      second:
+    - _DistortionVectorMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
         m_Texture: {fileID: 2800000, guid: f33ccd07f9433f44f8c5430938b168ac, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _FalloffTex
-      second:
+    - _EmissiveColorMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _Illum
-      second:
+    - _FalloffTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _MainTex
-      second:
+    - _Illum:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
         m_Texture: {fileID: 2800000, guid: f33ccd07f9433f44f8c5430938b168ac, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _MetallicGlossMap
-      second:
+    - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _OcclusionMap
-      second:
+    - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _ParallaxMap
-      second:
+    - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _ShadowTex
-      second:
+    - _ShadowTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _SpecGlossMap
-      second:
+    - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: g_tOverrideLightmap
-      second:
+    - _UnlitColorMap:
+        m_Texture: {fileID: 2800000, guid: f33ccd07f9433f44f8c5430938b168ac, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - g_tOverrideLightmap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
-    - first:
-        name: _BumpScale
-      second: 1
-    - first:
-        name: _ColorMask
-      second: 15
-    - first:
-        name: _Cutoff
-      second: 0.5
-    - first:
-        name: _Darken
-      second: 0.641
-    - first:
-        name: _DetailNormalMapScale
-      second: 1
-    - first:
-        name: _DstBlend
-      second: 10
-    - first:
-        name: _Emission
-      second: 0.01
-    - first:
-        name: _EmissionScaleUI
-      second: 0
-    - first:
-        name: _FogMultiplier
-      second: 1
-    - first:
-        name: _Glossiness
-      second: 0
-    - first:
-        name: _Metallic
-      second: 0
-    - first:
-        name: _Mode
-      second: 3
-    - first:
-        name: _OcclusionStrength
-      second: 1
-    - first:
-        name: _OcclusionStrengthDirectDiffuse
-      second: 1
-    - first:
-        name: _OcclusionStrengthDirectSpecular
-      second: 1
-    - first:
-        name: _OcclusionStrengthIndirectDiffuse
-      second: 1
-    - first:
-        name: _OcclusionStrengthIndirectSpecular
-      second: 1
-    - first:
-        name: _Parallax
-      second: 0.02
-    - first:
-        name: _SeeThru
-      second: 0.358
-    - first:
-        name: _SpecularMode
-      second: 2
-    - first:
-        name: _SrcBlend
-      second: 1
-    - first:
-        name: _Stencil
-      second: 0
-    - first:
-        name: _StencilComp
-      second: 8
-    - first:
-        name: _StencilOp
-      second: 0
-    - first:
-        name: _StencilReadMask
-      second: 255
-    - first:
-        name: _StencilWriteMask
-      second: 255
-    - first:
-        name: _UVSec
-      second: 0
-    - first:
-        name: _ZWrite
-      second: 0
-    - first:
-        name: g_bEnableMetallic
-      second: 0
-    - first:
-        name: g_bReceiveShadows
-      second: 1
-    - first:
-        name: g_bUnlit
-      second: 1
-    - first:
-        name: g_bWorldAlignedTexture
-      second: 0
-    - first:
-        name: g_flCubeMapScalar
-      second: 1
-    - first:
-        name: g_flReflectanceBias
-      second: 0
-    - first:
-        name: g_flReflectanceMax
-      second: 1
-    - first:
-        name: g_flReflectanceMin
-      second: 0
-    - first:
-        name: g_flReflectanceScale
-      second: 1
+    - _AddPrecomputedVelocity: 0
+    - _AlbedoAffectEmissive: 0
+    - _AlphaCutoff: 0.5
+    - _AlphaCutoffEnable: 0
+    - _AlphaDstBlend: 10
+    - _AlphaSrcBlend: 1
+    - _AlphaToMask: 0
+    - _AlphaToMaskInspectorValue: 0
+    - _BlendMode: 0
+    - _BumpScale: 1
+    - _ColorMask: 15
+    - _CullMode: 2
+    - _Cutoff: 0.5
+    - _Darken: 0.641
+    - _DetailNormalMapScale: 1
+    - _DistortionBlendMode: 0
+    - _DistortionBlurBlendMode: 0
+    - _DistortionBlurDstBlend: 1
+    - _DistortionBlurRemapMax: 1
+    - _DistortionBlurRemapMin: 0
+    - _DistortionBlurScale: 1
+    - _DistortionBlurSrcBlend: 1
+    - _DistortionDepthTest: 1
+    - _DistortionDstBlend: 1
+    - _DistortionEnable: 0
+    - _DistortionOnly: 0
+    - _DistortionScale: 1
+    - _DistortionSrcBlend: 1
+    - _DistortionVectorBias: -1
+    - _DistortionVectorScale: 2
+    - _DoubleSidedEnable: 0
+    - _DoubleSidedGIMode: 0
+    - _DstBlend: 10
+    - _Emission: 0.01
+    - _EmissionScaleUI: 0
+    - _EmissiveExposureWeight: 1
+    - _EmissiveIntensity: 1
+    - _EmissiveIntensityUnit: 0
+    - _EnableFogOnTransparent: 0
+    - _FogMultiplier: 1
+    - _Glossiness: 0
+    - _IncludeIndirectLighting: 1
+    - _Metallic: 0
+    - _Mode: 3
+    - _OcclusionStrength: 1
+    - _OcclusionStrengthDirectDiffuse: 1
+    - _OcclusionStrengthDirectSpecular: 1
+    - _OcclusionStrengthIndirectDiffuse: 1
+    - _OcclusionStrengthIndirectSpecular: 1
+    - _OpaqueCullMode: 2
+    - _Parallax: 0.02
+    - _SeeThru: 0.358
+    - _SpecularMode: 2
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefDistortionVec: 4
+    - _StencilRefMV: 32
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskMV: 40
+    - _SurfaceType: 1
+    - _TransparentCullMode: 2
+    - _TransparentSortPriority: 0
+    - _TransparentZWrite: 0
+    - _UVSec: 0
+    - _UseEmissiveIntensity: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestModeDistortion: 4
+    - _ZTestTransparent: 4
+    - _ZWrite: 0
+    - g_bEnableMetallic: 0
+    - g_bReceiveShadows: 1
+    - g_bUnlit: 1
+    - g_bWorldAlignedTexture: 0
+    - g_flCubeMapScalar: 1
+    - g_flReflectanceBias: 0
+    - g_flReflectanceMax: 1
+    - g_flReflectanceMin: 0
+    - g_flReflectanceScale: 1
     m_Colors:
-    - first:
-        name: _Color
-      second: {r: 0.26374358, g: 0.6344103, b: 0.834, a: 0.61960787}
-    - first:
-        name: _EmissionColor
-      second: {r: 0.26, g: 0.32999998, b: 0.37, a: 1}
-    - first:
-        name: _EmissionColorUI
-      second: {r: 1, g: 1, b: 1, a: 1}
-    - first:
-        name: _SpecColor
-      second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - first:
-        name: _Specular
-      second: {r: 0, g: 0, b: 0, a: 0}
-    - first:
-        name: _TintColor
-      second: {r: 0.22033198, g: 0.41133347, b: 0.516, a: 0.453}
-    - first:
-        name: g_vWorldAlignedNormalTangentU
-      second: {r: -1, g: 0, b: 0, a: 0}
-    - first:
-        name: g_vWorldAlignedNormalTangentV
-      second: {r: 0, g: 0, b: 1, a: 0}
-    - first:
-        name: g_vWorldAlignedTextureNormal
-      second: {r: 0, g: 1, b: 0, a: 0}
-    - first:
-        name: g_vWorldAlignedTexturePosition
-      second: {r: 0, g: 0, b: 0, a: 0}
-    - first:
-        name: g_vWorldAlignedTextureSize
-      second: {r: 1, g: 1, b: 1, a: 0}
+    - _Color: {r: 0.65881985, g: 0.87542117, b: 0.99056596, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _Specular: {r: 0, g: 0, b: 0, a: 0}
+    - _TintColor: {r: 0.22033198, g: 0.41133347, b: 0.516, a: 0.453}
+    - _UnlitColor: {r: 0.65881985, g: 0.87542117, b: 0.990566, a: 1}
+    - _UnlitColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
+    - g_vWorldAlignedNormalTangentU: {r: -1, g: 0, b: 0, a: 0}
+    - g_vWorldAlignedNormalTangentV: {r: 0, g: 0, b: 1, a: 0}
+    - g_vWorldAlignedTextureNormal: {r: 0, g: 1, b: 0, a: 0}
+    - g_vWorldAlignedTexturePosition: {r: 0, g: 0, b: 0, a: 0}
+    - g_vWorldAlignedTextureSize: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &7030100693382267748
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 12
+  hdPluginSubTargetMaterialVersions:
+    m_Keys: []
+    m_Values: 
